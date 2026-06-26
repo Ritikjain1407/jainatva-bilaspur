@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elderly Care — Jainatva Bilaspur</title>
+  <meta name="description" content="Dedicated to serving and comforting senior citizens through old-age home visits, medicine support, and emotional companionship." />
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Anti-flash Dark Mode Loader
+    const theme = localStorage.getItem('jainatva-dark');
+    if (theme === 'true') document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Jainatva Bilaspur home">
+        <img src="assets/logo.jpeg" alt="Jainatva Bilaspur logo" />
+        <div class="nav-logo-text">
+          <span class="org-name">JAINATVA</span>
+          <span class="org-tagline">BILASPUR</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button id="dark-toggle" class="btn-dark-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="work.html">Our Work</a>
+    <a href="join.html">Join Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html#donate" style="color: var(--saffron); font-weight: bold;"><i class="fas fa-heart"></i> Donate</a>
+  </nav>
+
+  <!-- INNER HERO SECTION -->
+  <section id="hero" class="hero-section" style="min-height: 60vh; padding: 120px 24px 60px; background: linear-gradient(rgba(13, 43, 94, 0.9), rgba(230, 161, 0, 0.7)), url('assets/flag.png') no-repeat center center / cover;" aria-label="Hero section">
+    <div class="hero-content" style="max-width: 800px;">
+      <div class="hero-badge">
+        <i class="fas fa-hand-holding-heart" aria-hidden="true" style="color: var(--saffron);"></i>
+        <span>Pillar of Service · Elderly Care Support</span>
+      </div>
+      <h1 class="hero-title" style="font-size: clamp(32px, 6vw, 54px);">
+        Senior Citizens Support
+      </h1>
+      <p class="hero-subtitle" style="margin-bottom: 0; font-size: clamp(15px, 2.5vw, 18px); color: rgba(255,255,255,0.95);">
+        Spreading warmth, joy, and emotional companionship to senior citizens in old-age homes across Bilaspur city.
+      </p>
+    </div>
+  </section>
+
+  <!-- DETAILS SECTION -->
+  <section style="padding: 90px 24px; background: var(--white);">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 50px; align-items: center;">
+        <div class="reveal">
+          <span class="section-badge" style="color: var(--saffron); font-weight: 600;">Companionship &amp; Care</span>
+          <h2 class="section-title" style="font-size: 34px; font-weight: 800; margin-bottom: 20px;">Comforting Our Elders</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+            The elderly population in old-age homes often faces deep isolation, seeking emotional warmth and simple human connection. At Jainatva, we believe in honoring their wisdom and bringing laughter back into their lives.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+            Our volunteers conduct regular monthly visits, hosting interactive storytelling sessions, singing traditional songs, distributing daily essentials, and celebrating major festivals together as one big family.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <strong style="color: var(--text-primary);">Medical Camps:</strong> Facilitating regular checkups, health tracking, and securing monthly medication logs.
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <strong style="color: var(--text-primary);">Dignity &amp; Respect:</strong> Supporting old-age facilities with infrastructure needs like blankets, clean linen, and sanitation supplies.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="background: linear-gradient(135deg, var(--navy-light), var(--green-light)); border-radius: var(--radius-lg); padding: 40px; border: 1px solid var(--gray-100);">
+          <h3 style="font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 15px;">Focus Areas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--saffron-dark); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-face-smile"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Active Listening</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Spending hours hearing their life stories, validating their emotions, and providing deep psychological comfort.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--green-dark); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-kit-medical"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Health &amp; Prescription Aid</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Bridging the medical gap by sourcing life-saving medications, spectacles, and physical support gear.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--navy); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-guitar"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Festive &amp; Cultural Evenings</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Organizing bhajans, sharing festive meals, and presenting local arts to recreate a lively home atmosphere.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY & MOMENTS -->
+  <section style="padding: 90px 24px; background: var(--off-white);">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto; text-align: center;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase;">Joyful Moments</span>
+        <h2 class="section-title" style="font-size: 34px; font-weight: 800;">Gallery &amp; Photos</h2>
+        <p style="color: var(--text-secondary);">Visual highlights from our monthly interactions, health distributions, and festive sessions with grandparents.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Card 1 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-handshake-angle" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Companionship Hours</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Volunteers spending quality time chatting, playing indoor board games, and laughing with grandparents.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--saffron), var(--saffron-dark)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-heart-pulse" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Prescription Distributions</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Supplying prescribed blood pressure, diabetes, and bone health medicines for underprivileged facility elders.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--green), var(--green-dark)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-gift" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Festival Celebrations</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Sharing fruits, dry fruits, blankets, and traditional clothing during Diwali and Navratri campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section style="padding: 80px 24px; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); color: white; text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-size: 30px; font-weight: 800; margin-bottom: 16px;">Bring Joy to a Grandparent</h2>
+      <p style="color: rgba(255,255,255,0.8); margin-bottom: 30px; line-height: 1.7; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Your presence is the most valuable gift. Join our next monthly visit and make a difference in senior citizens' lives with simple companionship.
+      </p>
+      <a href="join.html" class="btn btn-primary" style="box-shadow: 0 4px 15px rgba(230,161,0,0.4);">
+        <i class="fas fa-hands-helping" aria-hidden="true"></i> Join Next Visit
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+            <div class="footer-logo-text">
+              <div class="org-name">JAINATVA</div>
+              <div class="org-tagline">BILASPUR</div>
+            </div>
+          </div>
+          <p>A youth-led social welfare organization dedicated to serving the community of Bilaspur through compassion, education, and service.</p>
+          <div class="footer-tagline">"Together We Serve. Together We Inspire."</div>
+          <div class="social-icons" style="margin-top: 15px;">
+            <a href="https://instagram.com/jainatva_bilaspur" class="social-icon ig" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917647031088" class="social-icon wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jainatva.bilaspur@gmail.com" class="social-icon em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="work.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Our Work</a></li>
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Join Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Become a Volunteer</a></li>
+            <li><a href="contact.html#donate"><i class="fas fa-chevron-right" aria-hidden="true"></i> Donate</a></li>
+            <li><a href="work.html#reports-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> Monthly Reports</a></li>
+            <li><a href="work.html#blog-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> News &amp; Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span><a href="https://wa.me/917647031088">+91 76470 31088</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span><a href="mailto:jainatva.bilaspur@gmail.com">jainatva.bilaspur@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span><a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener">@jainatva_bilaspur</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Bilaspur, Chhattisgarh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 <strong style="color: rgba(255,255,255,0.6);">Jainatva Bilaspur</strong>. All Rights Reserved. Built with <i class="fas fa-heart" style="color: #FF5252;"></i> for Community.</p>
+        <div class="footer-bottom-social">
+          <a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917647031088" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:jainatva.bilaspur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Enlarged photo" />
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <a href="#hero" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+
+  <!-- LIGHTBOX SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-img');
+      const captionText = document.getElementById('lightbox-caption');
+      const closeBtn = document.getElementById('lightbox-close');
+
+      // Find all images inside the gallery column grid that can be zoomed
+      const galleryImages = document.querySelectorAll('.grid img');
+      galleryImages.forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', () => {
+          modal.classList.add('open');
+          modalImg.src = img.src;
+          captionText.textContent = img.alt || '';
+        });
+      });
+
+      // Close handlers
+      const closeModal = () => modal.classList.remove('open');
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target === closeBtn) {
+          closeModal();
+        }
+      });
+      
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
