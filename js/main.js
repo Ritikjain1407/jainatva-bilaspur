@@ -135,7 +135,7 @@ function handleNewsletter(btn) {
     return;
   }
   btn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
-  btn.style.background = 'linear-gradient(135deg, #2E7D32, #1B5E20)';
+  btn.style.background = 'linear-gradient(135deg, var(--green), var(--green-dark))';
   input.value = '';
   setTimeout(() => {
     btn.innerHTML = '<i class="fas fa-paper-plane"></i> Subscribe';
