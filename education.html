@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education Support — Jainatva Bilaspur</title>
+  <meta name="description" content="Dedicated to serving underprivileged children in Bilaspur through free tuition camps, stationery drives, and volunteer mentorship." />
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Anti-flash Dark Mode Loader
+    const theme = localStorage.getItem('jainatva-dark');
+    if (theme === 'true') document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Jainatva Bilaspur home">
+        <img src="assets/logo.jpeg" alt="Jainatva Bilaspur logo" />
+        <div class="nav-logo-text">
+          <span class="org-name">JAINATVA</span>
+          <span class="org-tagline">BILASPUR</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button id="dark-toggle" class="btn-dark-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="work.html">Our Work</a>
+    <a href="join.html">Join Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html#donate" style="color: var(--saffron); font-weight: bold;"><i class="fas fa-heart"></i> Donate</a>
+  </nav>
+
+  <!-- INNER HERO SECTION -->
+  <section id="hero" class="hero-section" style="min-height: 60vh; padding: 120px 24px 60px; background: linear-gradient(rgba(13, 43, 94, 0.9), rgba(230, 161, 0, 0.7)), url('assets/flag.png') no-repeat center center / cover;" aria-label="Hero section">
+    <div class="hero-content" style="max-width: 800px;">
+      <div class="hero-badge">
+        <i class="fas fa-graduation-cap" aria-hidden="true" style="color: var(--saffron);"></i>
+        <span>Pillar of Service · Free Education Support</span>
+      </div>
+      <h1 class="hero-title" style="font-size: clamp(32px, 6vw, 54px);">
+        Jainatva Pathshala
+      </h1>
+      <p class="hero-subtitle" style="margin-bottom: 0; font-size: clamp(15px, 2.5vw, 18px); color: rgba(255,255,255,0.95);">
+        Providing quality coaching, learning resources, and life-skills mentorship to children from underprivileged backgrounds in Bilaspur, CG.
+      </p>
+    </div>
+  </section>
+
+  <!-- DETAILS SECTION -->
+  <section style="padding: 90px 24px; background: var(--white);">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 50px; align-items: center;">
+        <div class="reveal">
+          <span class="section-badge" style="color: var(--saffron); font-weight: 600;">The Pathshala Concept</span>
+          <h2 class="section-title" style="font-size: 34px; font-weight: 800; margin-bottom: 20px;">Why Free Education Matters</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+            Education is the most powerful tool for community empowerment. However, many students in municipal or government schools lack access to guided mentorship and extra help outside the classroom.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+            Our volunteers organize structured weekly classes covering basic subjects (Mathematics, English Grammar, and Basic Sciences) alongside personality development, sanitation awareness, and general life skills.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <strong style="color: var(--text-primary);">School Kit Drives:</strong> Annual distribution of backpacks, writing notebooks, geometry boxes, and textbooks.
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <strong style="color: var(--text-primary);">Holistic Care:</strong> Integrating fun drawing activities, civic moral sessions, and healthy refreshments into learning hours.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="background: linear-gradient(135deg, var(--navy-light), var(--green-light)); border-radius: var(--radius-lg); padding: 40px; border: 1px solid var(--gray-100);">
+          <h3 style="font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 15px;">Focus Areas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--saffron-dark); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-pen-nib"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Foundational Literacy</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Focusing on reading, grammar, and basic calculations to bridge primary school learning gaps.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--green-dark); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-users-viewfinder"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Mentorship &amp; Counseling</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Guiding secondary students through career paths, college opportunities, and local vocational courses.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="background: var(--white); color: var(--navy); padding: 12px; border-radius: var(--radius-md); font-size: 20px;"><i class="fas fa-hands-clapping"></i></div>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Moral &amp; Civic Ethics</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Teaching civic responsibilities, environmental preservation, hygiene practices, and local values.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITY & ACTIVITY GALLERY -->
+  <section style="padding: 90px 24px; background: var(--off-white);">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto; text-align: center;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase;">Classroom Moments</span>
+        <h2 class="section-title" style="font-size: 34px; font-weight: 800;">Gallery &amp; Facilities</h2>
+        <p style="color: var(--text-secondary);">A glimpse into our classrooms, stationery drives, and the learning environments created by our youth volunteers.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Photo card 1 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-school" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Street Classroom Setup</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Weekly open-air tuition camps held under safe shelters, equipped with writing blackboards and mats.</p>
+          </div>
+        </div>
+
+        <!-- Photo card 2 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--saffron), var(--saffron-dark)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-boxes-packing" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Stationery Sorting &amp; Pack</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Volunteers assembly center sorting donated notebooks, pencil cases, and bags before campaigns.</p>
+          </div>
+        </div>
+
+        <!-- Photo card 3 -->
+        <div class="reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+          <div style="height: 220px; background: linear-gradient(135deg, var(--green), var(--green-dark)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-hands-holding-child" style="font-size: 60px; opacity: 0.35;"></i>
+          </div>
+          <div style="padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Kit Distribution Drives</h4>
+            <p style="font-size: 13px; color: var(--text-secondary);">Our team distributing complete school kits to students at municipal schools ahead of the new term.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUTORS & VOLUNTEERS BIOS -->
+  <section style="padding: 90px 24px; background: var(--white);">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto; text-align: center;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase;">Our Instructors</span>
+        <h2 class="section-title" style="font-size: 34px; font-weight: 800;">Tutors &amp; Mentors</h2>
+        <p style="color: var(--text-secondary);">Meet the dedicated youth volunteers who plan the lessons, tutor the students, and coordinate the Pathshala.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Tutor 1 -->
+        <div class="reveal" style="background: var(--off-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--gray-100); text-align: center; padding: 30px 20px; box-shadow: var(--shadow-sm);">
+          <div style="width: 90px; height: 90px; background: var(--saffron-light); color: var(--saffron-dark); display: flex; align-items: center; justify-content: center; font-size: 32px; border-radius: 50%; margin: 0 auto 20px auto;">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 style="font-size: 17px; font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">Anjali Jain</h3>
+          <span style="font-size: 11px; color: var(--saffron-dark); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Pathshala Coordinator</span>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">A college senior managing lesson plans and organizing local study center facilities. Mentors students in English and Social Science.</p>
+        </div>
+
+        <!-- Tutor 2 -->
+        <div class="reveal" style="background: var(--off-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--gray-100); text-align: center; padding: 30px 20px; box-shadow: var(--shadow-sm);">
+          <div style="width: 90px; height: 90px; background: var(--green-light); color: var(--green-dark); display: flex; align-items: center; justify-content: center; font-size: 32px; border-radius: 50%; margin: 0 auto 20px auto;">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3 style="font-size: 17px; font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">Deepak Sharma</h3>
+          <span style="font-size: 11px; color: var(--green-dark); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Mathematics Mentor</span>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Working software professional who dedicates his weekends to teaching logic, arithmetic, and coding basics to primary students.</p>
+        </div>
+
+        <!-- Tutor 3 -->
+        <div class="reveal" style="background: var(--off-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--gray-100); text-align: center; padding: 30px 20px; box-shadow: var(--shadow-sm);">
+          <div style="width: 90px; height: 90px; background: var(--navy-light); color: var(--navy-mid); display: flex; align-items: center; justify-content: center; font-size: 32px; border-radius: 50%; margin: 0 auto 20px auto;">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3 style="font-size: 17px; font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">Shruti Agrawal</h3>
+          <span style="font-size: 11px; color: var(--navy-mid); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; display: block; margin-bottom: 12px;">Science Instructor</span>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Coordinates science models, runs basic experiment sessions, and conducts crucial health, hygiene, and environmental awareness talks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA VOLUNTEER SECTION -->
+  <section style="padding: 80px 24px; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); color: white; text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-size: 30px; font-weight: 800; margin-bottom: 16px;">Make a Difference as a Mentor</h2>
+      <p style="color: rgba(255,255,255,0.8); margin-bottom: 30px; line-height: 1.7; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Have a few hours to spare on weekends? Join our volunteer network and help shape a child's future by teaching math, science, or English.
+      </p>
+      <a href="join.html" class="btn btn-primary" style="box-shadow: 0 4px 15px rgba(230,161,0,0.4);">
+        <i class="fas fa-hands-helping" aria-hidden="true"></i> Become a Tutor
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+            <div class="footer-logo-text">
+              <div class="org-name">JAINATVA</div>
+              <div class="org-tagline">BILASPUR</div>
+            </div>
+          </div>
+          <p>A youth-led social welfare organization dedicated to serving the community of Bilaspur through compassion, education, and service.</p>
+          <div class="footer-tagline">"Together We Serve. Together We Inspire."</div>
+          <div class="social-icons" style="margin-top: 15px;">
+            <a href="https://instagram.com/jainatva_bilaspur" class="social-icon ig" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917647031088" class="social-icon wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jainatva.bilaspur@gmail.com" class="social-icon em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="work.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Our Work</a></li>
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Join Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Become a Volunteer</a></li>
+            <li><a href="contact.html#donate"><i class="fas fa-chevron-right" aria-hidden="true"></i> Donate</a></li>
+            <li><a href="work.html#reports-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> Monthly Reports</a></li>
+            <li><a href="work.html#blog-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> News &amp; Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span><a href="https://wa.me/917647031088">+91 76470 31088</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span><a href="mailto:jainatva.bilaspur@gmail.com">jainatva.bilaspur@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span><a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener">@jainatva_bilaspur</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Bilaspur, Chhattisgarh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 <strong style="color: rgba(255,255,255,0.6);">Jainatva Bilaspur</strong>. All Rights Reserved. Built with <i class="fas fa-heart" style="color: #FF5252;"></i> for Community.</p>
+        <div class="footer-bottom-social">
+          <a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917647031088" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:jainatva.bilaspur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#hero" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

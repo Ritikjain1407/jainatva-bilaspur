@@ -50,6 +50,8 @@ navLinks.forEach(link => {
       link.classList.add('active');
     } else if (page && linkPage && page === linkPage) {
       link.classList.add('active');
+    } else if (page === 'education.html' && linkPage === 'work.html') {
+      link.classList.add('active');
     } else {
       link.classList.remove('active');
     }
