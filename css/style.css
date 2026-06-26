@@ -1782,3 +1782,283 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
   }
+
+  /* ═══════════════════════════════════════════
+     COMPREHENSIVE MOBILE RESPONSIVE OVERHAUL
+     Fixes: cut edges, oversized fonts/tags,
+     broken layouts on phones & tablets
+  ═══════════════════════════════════════════ */
+
+  /* --- Global container safe padding --- */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    body { overflow-x: hidden; }
+
+    section { padding: 60px 0 !important; }
+
+    /* --- Navbar --- */
+    .nav-container {
+      padding: 0 16px;
+      height: 64px;
+    }
+
+    .nav-logo img { height: 38px; width: 38px; }
+
+    .nav-logo-text .org-name { font-size: 15px; }
+    .nav-logo-text .org-tagline { font-size: 9px; }
+
+    /* Hide donate button text on small screens, keep icon */
+    .nav-actions .btn-primary span { display: none; }
+
+    /* --- Hero Section (index.html) --- */
+    .hero-title {
+      font-size: clamp(26px, 7vw, 36px) !important;
+      line-height: 1.2 !important;
+    }
+
+    .hero-subtitle {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+    }
+
+    .hero-buttons {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 12px !important;
+    }
+
+    .hero-buttons .btn {
+      width: 100% !important;
+      justify-content: center !important;
+      padding: 13px 20px !important;
+      font-size: 14px !important;
+    }
+
+    .hero-stats {
+      gap: 16px !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+    }
+
+    .hero-stat .num { font-size: 28px !important; }
+    .hero-stat .lbl { font-size: 11px !important; }
+
+    /* --- Section headers --- */
+    .section-title {
+      font-size: clamp(22px, 6vw, 30px) !important;
+    }
+
+    h1 { font-size: clamp(24px, 7vw, 36px) !important; }
+    h2 { font-size: clamp(20px, 5.5vw, 30px) !important; }
+    h3 { font-size: clamp(17px, 4.5vw, 22px) !important; }
+
+    /* --- Initiative / Feature Cards --- */
+    .initiative-card {
+      padding: 24px 18px !important;
+    }
+
+    /* --- About grid --- */
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 32px !important;
+    }
+
+    .about-logo-wrap {
+      min-height: 220px !important;
+      padding: 28px !important;
+    }
+
+    .about-float-badge {
+      bottom: -10px !important;
+      right: 10px !important;
+      padding: 10px 14px !important;
+    }
+
+    .about-vsm {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 12px !important;
+    }
+
+    /* --- Volunteer Cards (volunteers.html) --- */
+    .core-vol-grid {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 16px !important;
+    }
+
+    .vol-card {
+      padding: 24px 14px 20px !important;
+    }
+
+    .vol-photo-wrap { width: 90px !important; height: 90px !important; }
+    .vol-photo { width: 90px !important; height: 90px !important; }
+    .vol-initials { width: 90px !important; height: 90px !important; font-size: 26px !important; }
+
+    .vol-card h3 { font-size: 15px !important; }
+    .vol-badge-role { font-size: 10px !important; padding: 3px 10px !important; }
+
+    /* --- Volunteer Hero --- */
+    .vol-hero {
+      padding: 100px 16px 60px !important;
+      min-height: auto !important;
+    }
+
+    .vol-hero h1 { font-size: clamp(26px, 7vw, 38px) !important; }
+    .vol-hero p { font-size: 14px !important; }
+
+    .vol-hero-stats {
+      gap: 20px !important;
+      flex-wrap: wrap !important;
+    }
+
+    .vol-stat-num { font-size: 24px !important; }
+    .vol-stat-label { font-size: 10px !important; }
+
+    /* --- Inner banners (all sub-pages) --- */
+    .inner-banner {
+      padding: 90px 16px 50px !important;
+    }
+
+    .inner-banner h1 { font-size: clamp(24px, 6vw, 36px) !important; }
+
+    /* --- Grid fixes --- */
+    .grid-2 { grid-template-columns: 1fr !important; }
+    .grid-3 { grid-template-columns: 1fr !important; }
+    .grid-4 { grid-template-columns: 1fr 1fr !important; }
+
+    /* --- Footer --- */
+    .footer-grid {
+      grid-template-columns: 1fr !important;
+      gap: 28px !important;
+    }
+
+    .footer-brand p { font-size: 13px !important; }
+
+    /* --- Contact page --- */
+    .contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+
+    /* --- Forms --- */
+    .form-row { grid-template-columns: 1fr !important; }
+    .form-card { padding: 24px 16px !important; }
+
+    /* --- Buttons global --- */
+    .btn {
+      padding: 11px 20px !important;
+      font-size: 13.5px !important;
+    }
+
+    /* --- Timeline (about page) --- */
+    .timeline::before { left: 20px !important; }
+    .timeline-item { grid-template-columns: 44px 1fr !important; }
+
+    /* --- Newsletter --- */
+    #newsletter .grid-2 {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
+    #newsletter input[type="email"] {
+      min-width: 0 !important;
+      width: 100% !important;
+    }
+
+    #newsletter .btn { width: 100% !important; justify-content: center !important; }
+
+    /* --- Work page initiative cards --- */
+    .work-card, .initiative-card {
+      padding: 24px 18px !important;
+    }
+
+    /* --- Values grid --- */
+    .values-grid { grid-template-columns: 1fr 1fr !important; }
+
+    /* --- Prevent any horizontal overflow --- */
+    * { max-width: 100%; box-sizing: border-box; }
+    img { max-width: 100% !important; height: auto !important; }
+
+    /* --- Education & Elder care pages --- */
+    .edu-hero, .elder-hero {
+      padding: 100px 16px 50px !important;
+    }
+  }
+
+  /* --- Extra small phones (iPhone SE, small Android) --- */
+  @media (max-width: 480px) {
+    .container { padding-left: 14px; padding-right: 14px; }
+
+    section { padding: 50px 0 !important; }
+
+    .nav-container { height: 60px; padding: 0 14px; }
+
+    /* Hero */
+    .hero-title { font-size: 24px !important; }
+    .hero-subtitle { font-size: 13px !important; }
+
+    /* Volunteer cards go 1 column */
+    .core-vol-grid { grid-template-columns: 1fr !important; max-width: 280px; margin-left: auto; margin-right: auto; }
+
+    /* Stats */
+    .hero-stats { gap: 14px !important; }
+    .hero-stat .num { font-size: 24px !important; }
+
+    /* About */
+    .about-vsm { grid-template-columns: 1fr !important; }
+    .values-grid { grid-template-columns: 1fr !important; }
+
+    /* Footer */
+    .footer-grid { grid-template-columns: 1fr !important; }
+    .footer-bottom { flex-direction: column !important; gap: 10px !important; text-align: center !important; }
+    .footer-bottom p { font-size: 12px !important; }
+
+    /* Buttons */
+    .btn { font-size: 13px !important; padding: 11px 18px !important; }
+
+    /* Cards */
+    .vol-card { padding: 20px 12px !important; }
+    .vol-photo-wrap { width: 80px !important; height: 80px !important; }
+    .vol-photo { width: 80px !important; height: 80px !important; }
+    .vol-initials { width: 80px !important; height: 80px !important; font-size: 22px !important; }
+
+    /* Section headings */
+    h1 { font-size: 22px !important; }
+    h2 { font-size: 19px !important; }
+    h3 { font-size: 16px !important; }
+    p  { font-size: 13.5px !important; }
+
+    /* Newsletter */
+    #newsletter { padding: 50px 0 !important; }
+    #newsletter h2 { font-size: 20px !important; }
+
+    /* Mobile nav drawer links */
+    #mobile-nav a { font-size: 15px !important; padding: 14px 20px !important; }
+
+    /* Section badge */
+    .section-badge { font-size: 10px !important; padding: 5px 12px !important; }
+
+    /* Counters */
+    .counter-num { font-size: 32px !important; }
+
+    /* Form */
+    .form-card { padding: 20px 14px !important; border-radius: 12px !important; }
+    input, select, textarea { font-size: 14px !important; }
+  }
+
+  /* --- Tablet (768px - 1024px) adjustments --- */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container { padding-left: 24px; padding-right: 24px; }
+
+    .hero-title { font-size: clamp(30px, 5vw, 44px) !important; }
+
+    .core-vol-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+    .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+
+    .about-grid { gap: 40px !important; }
+
+    .vol-hero { padding: 110px 24px 70px !important; }
+  }
