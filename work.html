@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Jainatva Bilaspur's campaigns, community drives, filterable gallery, activity reports, and stories of change." />
+  <meta name="keywords" content="Jainatva work, social drives, food distribution, blood camp, tree plantation, animal feeding, Bilaspur charity" />
+  <title>Our Work &amp; Social Impact – Jainatva Bilaspur</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Anti-flash theme loader
+    (function() {
+      const isDark = localStorage.getItem('jainatva-dark') === 'true';
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Jainatva Bilaspur Home">
+        <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+        <div class="nav-logo-text">
+          <span class="org-name">JAINATVA</span>
+          <span class="org-tagline">सेवा • अहिंसा • परोपकार</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html" class="active">Our Work</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="contact.html#donate" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">
+          <i class="fas fa-heart" aria-hidden="true"></i> Donate
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="work.html" class="active">Our Work</a>
+    <a href="join.html">Join Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html#donate" style="color: var(--saffron); font-weight: bold;"><i class="fas fa-heart"></i> Donate</a>
+  </nav>
+
+  <!-- INNER BANNER -->
+  <section class="inner-banner" style="background: linear-gradient(135deg, var(--navy), var(--navy-mid)); padding: 100px 0 60px 0; text-align: center; color: white; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 90% 10%, rgba(255,153,51,0.15) 0%, transparent 60%); pointer-events: none;"></div>
+    <div class="container">
+      <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1.5px;">Welfare Campaigns</span>
+      <h1 style="font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 800; margin-top: 10px; color: white;">Our Work &amp; Social Impact</h1>
+      <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 15px auto 0 auto; font-size: 16px;">Exploring the eight pillars of service driving our daily activities, transparent reports, and success stories.</p>
+    </div>
+  </section>
+
+  <!-- EIGHT PILLARS OF SERVICE -->
+  <section id="services-catalog" style="padding: 100px 0; background: var(--white);" aria-labelledby="catalog-title">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Core Activities</span>
+        <h2 id="catalog-title" style="font-size: 36px; font-weight: 800; color: var(--text-primary);">Eight Pillars of Service</h2>
+        <p style="color: var(--text-secondary);">The foundations of our voluntary drives conducted across Bilaspur and its neighboring zones.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Card 1 -->
+        <div id="food-distribution" class="service-card reveal" style="padding: 30px; border-radius: var(--radius-md); background: var(--off-white); border: 1px solid var(--gray-100);">
+          <div class="service-icon-wrap" style="background: var(--saffron-light); color: var(--saffron); width: 60px; height: 60px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px;">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Food Distribution</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Regular langar drives, food packets for the needy, and nutrition support for underprivileged families across Bilaspur city and surrounding areas.</p>
+          <div style="margin-top: 20px; font-size: 12px; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+            <span><strong style="color: var(--saffron);">Drives:</strong> Weekly (Sundays)</span>
+            <span><strong style="color: var(--saffron);">Impact:</strong> 4,000+ meals served</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="education" class="service-card reveal" style="padding: 30px; border-radius: var(--radius-md); background: var(--off-white); border: 1px solid var(--gray-100);">
+          <div class="service-icon-wrap" style="background: var(--navy-light); color: var(--navy); width: 60px; height: 60px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px;">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Education Support</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Free tuition camps, stationery drives, and scholarship assistance for children from economically weaker backgrounds to help them achieve their potential.</p>
+          <div style="margin-top: 20px; font-size: 12px; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+            <span><strong style="color: var(--navy);">Drives:</strong> Bi-weekly tuition + School kits</span>
+            <span><strong style="color: var(--navy);">Impact:</strong> 800+ children helped</span>
+          </div>
+        </div>
+
+        
+
+        <!-- Card 7 -->
+        <div id="elderly-care" class="service-card reveal" style="padding: 30px; border-radius: var(--radius-md); background: var(--off-white); border: 1px solid var(--gray-100);">
+          <div class="service-icon-wrap" style="background: var(--navy-light); color: var(--navy); width: 60px; height: 60px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px;">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Elderly Care</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Visiting old-age homes, providing medicines, organizing cultural programs, and offering emotional support to senior citizens who need companionship.</p>
+          <div style="margin-top: 20px; font-size: 12px; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+            <span><strong style="color: var(--navy);">Drives:</strong> Monthly visits</span>
+            <span><strong style="color: var(--navy);">Impact:</strong> 3 old-age homes supported</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div id="social-awareness" class="service-card reveal" style="padding: 30px; border-radius: var(--radius-md); background: var(--off-white); border: 1px solid var(--gray-100);">
+          <div class="service-icon-wrap" style="background: var(--saffron-light); color: var(--saffron); width: 60px; height: 60px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px;">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Social Awareness</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">Campaigns on health, hygiene, girl education, anti-addiction, voter awareness, and sustainable living — reaching thousands through events and social media.</p>
+          <div style="margin-top: 20px; font-size: 12px; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+            <span><strong style="color: var(--saffron);">Drives:</strong> Seminars + street plays</span>
+            <span><strong style="color: var(--saffron);">Impact:</strong> 5,000+ citizens aware</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOMENTS GALLERY -->
+  <section id="gallery" style="padding: 100px 0; background: var(--off-white);" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 50px auto;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Photo Gallery</span>
+        <h2 id="gallery-title" class="section-title" style="font-size: 36px; font-weight: 800; margin-bottom: 20px;">Moments That Define Us</h2>
+        <p style="color: var(--text-secondary);">Filter our gallery to see photos of actual volunteers, active food Langars, and cleanliness campaigns in action.</p>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="gallery-tabs reveal" style="display: flex; gap: 10px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap;">
+        <button class="gallery-tab active" onclick="filterGallery(this, 'all')">All</button>
+        <button class="gallery-tab" onclick="filterGallery(this, 'drives')">Social Drives</button>
+        <button class="gallery-tab" onclick="filterGallery(this, 'events')">Events</button>
+        <button class="gallery-tab" onclick="filterGallery(this, 'volunteers')">Volunteers</button>
+        <button class="gallery-tab" onclick="filterGallery(this, 'community')">Community</button>
+        <button class="gallery-tab" onclick="filterGallery(this, 'celebrations')">Celebrations</button>
+      </div>
+
+      <!-- GALLERY GRID (Placeholders with Premium SVG Icons and hover expansion overlays) -->
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item gi-1" data-cat="drives" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-utensils" style="font-size: 32px; color: var(--saffron); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Food Distribution Drive</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-2" data-cat="events" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-tree" style="font-size: 32px; color: var(--green); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Tree Plantation Event</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-3" data-cat="volunteers" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-users" style="font-size: 32px; color: var(--navy); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Volunteer Meet 2025</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-4" data-cat="celebrations" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-star" style="font-size: 32px; color: var(--saffron); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Foundation Day</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-5" data-cat="community" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-broom" style="font-size: 32px; color: var(--green); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Cleanliness Drive</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-6" data-cat="drives" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-tint" style="font-size: 32px; color: #E53935; margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Blood Donation Camp</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-7" data-cat="events" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-graduation-cap" style="font-size: 32px; color: var(--navy); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Education Initiative</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+
+        <div class="gallery-item gi-8" data-cat="community" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; background: var(--white); border: 1px solid var(--gray-100); position: relative; transition: var(--transition);">
+          <div class="gallery-item-inner" style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--navy);">
+            <div class="gallery-placeholder" style="text-align: center;"><i class="fas fa-paw" style="font-size: 32px; color: var(--teal); margin-bottom: 8px;"></i><br /><span style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Animal Welfare Camp</span></div>
+          </div>
+          <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(13,43,94,0.9); opacity: 0; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); cursor: pointer;"><i class="fas fa-expand" style="font-size: 24px;"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORTS SECTION -->
+  <section id="reports-section" style="padding: 100px 0; background: var(--white);" aria-labelledby="reports-title">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Financial Transparency</span>
+        <h2 id="reports-title" class="section-title" style="font-size: 36px; font-weight: 800; margin-bottom: 20px;">Activity &amp; Audit Reports</h2>
+        <p style="color: var(--text-secondary);">We publish regular updates tracking volunteer metrics, campaign outcomes, and complete financial listings.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- June 2026 -->
+        <div class="report-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: var(--transition);">
+          <div class="report-month" style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin: 0;">June 2026</h3>
+            <span class="report-badge" style="background: var(--saffron-light); color: var(--saffron-dark); font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 50px;">Latest</span>
+          </div>
+          <div class="report-stats" style="display: flex; gap: 16px; margin: 10px 0;">
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--saffron);">8</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Drives</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--navy);">84</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Volunteers</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center;"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--green);">620</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Lives Touched</div></div>
+          </div>
+          <div class="report-divider" style="height: 1px; background: var(--gray-100); width: 100%;"></div>
+          <p class="report-summary" style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; min-height: 72px;">World Environment Day plantation, food distribution at 3 locations, awareness campaign on water conservation, and weekly animal feeding drives completed.</p>
+          <a href="assets/reports/report_june_2026.pdf" download class="report-download" style="color: var(--saffron); text-decoration: none; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-download"></i> Download PDF Report</a>
+        </div>
+
+        <!-- May 2026 -->
+        <div class="report-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: var(--transition);">
+          <div class="report-month" style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin: 0;">May 2026</h3>
+          </div>
+          <div class="report-stats" style="display: flex; gap: 16px; margin: 10px 0;">
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--saffron);">6</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Drives</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--navy);">72</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Volunteers</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center;"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--green);">410</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Lives Touched</div></div>
+          </div>
+          <div class="report-divider" style="height: 1px; background: var(--gray-100); width: 100%;"></div>
+          <p class="report-summary" style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; min-height: 72px;">Elderly felicitation programme, blood donation camp, summer food distribution, and voter awareness campaign ahead of local body elections.</p>
+          <a href="assets/reports/report_may_2026.pdf" download class="report-download" style="color: var(--saffron); text-decoration: none; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-download"></i> Download PDF Report</a>
+        </div>
+
+        <!-- April 2026 -->
+        <div class="report-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: var(--transition);">
+          <div class="report-month" style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin: 0;">April 2026</h3>
+          </div>
+          <div class="report-stats" style="display: flex; gap: 16px; margin: 10px 0;">
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--saffron);">5</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Drives</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center; border-right: 1px solid var(--gray-200);"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--navy);">60</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Volunteers</div></div>
+            <div class="report-stat" style="flex: 1; text-align: center;"><div class="num" style="font-size: 20px; font-weight: 700; color: var(--green);">380</div><div class="lbl" style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Lives Touched</div></div>
+          </div>
+          <div class="report-divider" style="height: 1px; background: var(--gray-100); width: 100%;"></div>
+          <p class="report-summary" style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; min-height: 72px;">New Year (Navratri) cleanliness drive, stationery distribution at 2 government schools, eye check-up camp in collaboration with Lions Club.</p>
+          <a href="assets/reports/report_april_2026.pdf" download class="report-download" style="color: var(--saffron); text-decoration: none; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-download"></i> Download PDF Report</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT STATISTICS SECTION -->
+  <section id="impact" style="padding: 100px 0; background: var(--off-white);" aria-labelledby="impact-title">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Our Progress</span>
+        <h2 id="impact-title" class="section-title" style="font-size: 36px; font-weight: 800; margin-bottom: 20px;">Numbers That Matter</h2>
+        <p style="color: var(--text-secondary);">Every statistic represents a real life touched, a street animal fed, or a tree planted by our team of volunteers.</p>
+      </div>
+
+      <div class="grid grid-5" style="gap: 20px;">
+        <div class="impact-card saffron reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+          <i class="fas fa-users impact-icon" aria-hidden="true" style="font-size: 28px; color: var(--saffron); margin-bottom: 15px;"></i><br />
+          <span class="counter-num" data-target="500" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1;">0</span>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Active Volunteers</p>
+        </div>
+        <div class="impact-card green reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+          <i class="fas fa-calendar-check impact-icon" aria-hidden="true" style="font-size: 28px; color: var(--green); margin-bottom: 15px;"></i><br />
+          <span class="counter-num" data-target="120" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1;">0</span>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Social Drives Conducted</p>
+        </div>
+        <div class="impact-card navy reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+          <i class="fas fa-heart impact-icon" aria-hidden="true" style="font-size: 28px; color: var(--navy); margin-bottom: 15px;"></i><br />
+          <span class="counter-num" data-target="10000" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1;">0</span>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Lives Impacted</p>
+        </div>
+        <div class="impact-card teal reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+          <i class="fas fa-hands-holding-circle impact-icon" aria-hidden="true" style="font-size: 28px; color: var(--teal); margin-bottom: 15px;"></i><br />
+          <span class="counter-num" data-target="200" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1;">0</span>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Community Events</p>
+        </div>
+        <div class="impact-card red reveal" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 24px; text-align: center; box-shadow: var(--shadow-sm);">
+          <i class="fas fa-graduation-cap impact-icon" aria-hidden="true" style="font-size: 28px; color: #E53935; margin-bottom: 15px;"></i><br />
+          <span class="counter-num" data-target="50" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1;">0</span>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Educational Campaigns</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / NEWS -->
+  <section id="blog-section" style="padding: 100px 0; background: var(--white);" aria-labelledby="blog-title">
+    <div class="container">
+      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">News &amp; Blog</span>
+        <h2 id="blog-title" style="font-size: 36px; font-weight: 800; color: var(--text-primary);">Stories of Change</h2>
+        <p style="color: var(--text-secondary);">Perspectives on social awareness, Jain philosophy on non-violence, and volunteer experiences.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Blog 1 -->
+        <div class="blog-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+          <div class="blog-thumb" style="height: 200px; background: linear-gradient(135deg, var(--navy), var(--navy-mid)); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-dove" style="font-size: 60px; opacity: 0.3;"></i>
+          </div>
+          <div class="blog-body" style="padding: 24px;">
+            <div class="blog-category" style="color: var(--saffron); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Jain Philosophy</div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.4;">How Ahimsa Guides Our Every Action as Volunteers</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">Exploring how the principle of non-violence extends beyond diet and applies to social work, community building, and leadership.</p>
+            <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted);">
+              <span>June 12, 2026</span>
+              <a href="#" style="color: var(--navy); text-decoration: none; font-weight: 600;">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+          <div class="blog-thumb" style="height: 200px; background: linear-gradient(135deg, var(--saffron), #FFB74D); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-hands-helping" style="font-size: 60px; opacity: 0.3;"></i>
+          </div>
+          <div class="blog-body" style="padding: 24px;">
+            <div class="blog-category" style="color: var(--saffron); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Volunteer Story</div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.4;">"Joining Jainatva Changed My Perspective on Life" – Priya Jain</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">A young engineering student shares her journey from observer to core volunteer over two transformative years with Jainatva Bilaspur.</p>
+            <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted);">
+              <span>May 28, 2026</span>
+              <a href="#" style="color: var(--navy); text-decoration: none; font-weight: 600;">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card reveal" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+          <div class="blog-thumb" style="height: 200px; background: linear-gradient(135deg, var(--green), #81C784); display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fas fa-tint" style="font-size: 60px; opacity: 0.3;"></i>
+          </div>
+          <div class="blog-body" style="padding: 24px;">
+            <div class="blog-category" style="color: var(--saffron); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Social Awareness</div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.4;">Why Blood Donation Is the Greatest Gift You Can Give</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">Every 2 seconds someone in India needs blood. Here's why our annual blood donation drive is the heart of our mission.</p>
+            <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted);">
+              <span>May 10, 2026</span>
+              <a href="#" style="color: var(--navy); text-decoration: none; font-weight: 600;">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section id="newsletter" style="padding: 80px 0; background: var(--navy); color: white; border-bottom: 1px solid rgba(255,255,255,0.08);" aria-labelledby="newsletter-title">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 40px;">
+        <div>
+          <h2 id="newsletter-title" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 10px; color: white;">Stay Updated with Jainatva</h2>
+          <p style="color: rgba(255,255,255,0.6); font-size: 14px;">Get event updates, monthly reports, and stories of impact delivered straight to your inbox.</p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="email" placeholder="Your Email Address" aria-label="Email for Newsletter" style="flex: 1; min-width: 250px; padding: 14px 20px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: white; font-family: inherit; font-size: 14px; outline: none; transition: var(--transition);" />
+          <button class="btn btn-primary" onclick="handleNewsletter(this)" style="font-size: 14.5px; padding: 14px 28px; border: none; cursor: pointer;">
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+            <div class="footer-logo-text">
+              <div class="org-name">JAINATVA</div>
+              <div class="org-tagline">BILASPUR</div>
+            </div>
+          </div>
+          <p>A youth-led social welfare organization dedicated to serving the community of Bilaspur through compassion, education, and service.</p>
+          <div class="footer-tagline">"Together We Serve. Together We Inspire."</div>
+          <div class="social-icons" style="margin-top: 15px;">
+            <a href="https://instagram.com/jainatva_bilaspur" class="social-icon ig" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917647031088" class="social-icon wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jainatva.bilaspur@gmail.com" class="social-icon em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="work.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Our Work</a></li>
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Join Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Become a Volunteer</a></li>
+            <li><a href="contact.html#donate"><i class="fas fa-chevron-right" aria-hidden="true"></i> Donate</a></li>
+            <li><a href="work.html#reports-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> Monthly Reports</a></li>
+            <li><a href="work.html#blog-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> News &amp; Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span><a href="https://wa.me/917647031088">+91 76470 31088</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span><a href="mailto:jainatva.bilaspur@gmail.com">jainatva.bilaspur@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span><a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener">@jainatva_bilaspur</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Bilaspur, Chhattisgarh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 <strong style="color: rgba(255,255,255,0.6);">Jainatva Bilaspur</strong>. All Rights Reserved. Built with <i class="fas fa-heart" style="color: #FF5252;"></i> for Community.</p>
+        <div class="footer-bottom-social">
+          <a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917647031088" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:jainatva.bilaspur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#navbar" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

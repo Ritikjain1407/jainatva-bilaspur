@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register to become a volunteer with Jainatva Bilaspur. Contribute to community drives and build leadership skills." />
+  <meta name="keywords" content="Jainatva volunteer, join NGO, volunteer registration, student volunteer, Bilaspur charity" />
+  <title>Become a Volunteer – Jainatva Bilaspur</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Anti-flash theme loader
+    (function() {
+      const isDark = localStorage.getItem('jainatva-dark') === 'true';
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Jainatva Bilaspur Home">
+        <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+        <div class="nav-logo-text">
+          <span class="org-name">JAINATVA</span>
+          <span class="org-tagline">सेवा • अहिंसा • परोपकार</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="join.html" class="active">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="contact.html#donate" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">
+          <i class="fas fa-heart" aria-hidden="true"></i> Donate
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="work.html">Our Work</a>
+    <a href="join.html" class="active">Join Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html#donate" style="color: var(--saffron); font-weight: bold;"><i class="fas fa-heart"></i> Donate</a>
+  </nav>
+
+  <!-- INNER BANNER -->
+  <section class="inner-banner" style="background: linear-gradient(135deg, var(--navy), var(--navy-mid)); padding: 100px 0 60px 0; text-align: center; color: white; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 10% 10%, rgba(255,153,51,0.15) 0%, transparent 60%); pointer-events: none;"></div>
+    <div class="container">
+      <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1.5px;">Get Involved</span>
+      <h1 style="font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 800; margin-top: 10px; color: white;">Be Part of Something Bigger</h1>
+      <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 15px auto 0 auto; font-size: 16px;">Jainatva is powered by the energy and compassion of volunteers like you. Join the family today.</p>
+    </div>
+  </section>
+
+  <!-- BENEFITS & REGISTRATION FORM -->
+  <section id="join-form-section" style="padding: 100px 0; background: var(--white);" aria-labelledby="join-header">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 50px; align-items: flex-start;">
+        <!-- Left Column: Benefits & Intro -->
+        <div class="reveal">
+          <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Volunteer Perks</span>
+          <h2 id="join-header" style="font-size: 32px; font-weight: 800; color: var(--text-primary); margin-bottom: 20px;">Why Volunteer with Jainatva?</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.7;">
+            Whether you have an hour a week or a weekend a month, there is a place for you here. Our volunteers are at the core of every Langar distributed, every sapling planted, and every animal rescued in Bilaspur.
+          </p>
+
+          <!-- Benefit List Items -->
+          <div class="grid grid-1" style="gap: 20px;">
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Hands-on Social Service</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Directly participate in meaningful food distribution, environmental plantation, and blood donation drives.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Develop Leadership Skills</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Plan and coordinate social awareness projects, build public speaking and team management capabilities.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Youth Networking</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Belong to the largest network of socially active youth in Bilaspur, forming friendships rooted in shared goodwill.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
+              <div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Volunteer Certificate</h4>
+                <p style="font-size: 13.5px; color: var(--text-secondary);">Receive formal participation certificates for drives, validating your contributions for academic and career advancement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Registration Form Card -->
+        <div class="reveal">
+          <div class="form-card" style="background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-sm);">
+            <h3 class="form-title" style="font-size: 22px; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; text-align: center;">Volunteer Registration</h3>
+            
+            <form id="volunteer-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group" style="margin-bottom: 20px;">
+                <label for="full-name" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Full Name *</label>
+                <input type="text" id="full-name" required placeholder="e.g. Priya Jain" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+              </div>
+
+              <div class="form-row" style="margin-bottom: 20px;">
+                <div class="form-group">
+                  <label for="phone" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Phone Number *</label>
+                  <input type="tel" id="phone" required placeholder="e.g. +91 76470 31088" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+                </div>
+                <div class="form-group">
+                  <label for="email" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Email Address</label>
+                  <input type="email" id="email" placeholder="e.g. email@example.com" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+                </div>
+              </div>
+
+              <div class="form-row" style="margin-bottom: 20px;">
+                <div class="form-group">
+                  <label for="occupation" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Occupation *</label>
+                  <select id="occupation" required style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition); cursor: pointer;">
+                    <option value="" disabled selected>Select occupation</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Working Professional</option>
+                    <option value="business">Business Owner</option>
+                    <option value="homemaker">Homemaker</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="age" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Age *</label>
+                  <input type="number" id="age" required min="12" max="80" placeholder="e.g. 21" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+                </div>
+              </div>
+
+              <div class="form-row" style="margin-bottom: 20px;">
+                <div class="form-group">
+                  <label for="city" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">City / Area *</label>
+                  <input type="text" id="city" required placeholder="e.g. Vyapar Vihar, Bilaspur" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+                </div>
+                <div class="form-group">
+                  <label for="skills" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Skills / Interests</label>
+                  <input type="text" id="skills" placeholder="e.g. Design, Photography, Teaching" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 28px;">
+                <label for="why-join" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Why do you want to join Jainatva? *</label>
+                <textarea id="why-join" required placeholder="Tell us how you would like to contribute..." style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition); resize: vertical; min-height: 100px;"></textarea>
+              </div>
+
+              <button type="submit" class="form-submit btn btn-primary" style="width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px;">Become a Volunteer</button>
+            </form>
+
+            <!-- Success message (Hidden by default in CSS, shown by JS adding .show) -->
+            <div id="form-success" class="form-success" style="display: none; text-align: center; padding: 20px 0;">
+              <i class="fas fa-check-circle" style="font-size: 48px; color: var(--green); margin-bottom: 16px;"></i>
+              <h3 style="font-size: 22px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">Welcome to Jainatva!</h3>
+              <p style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.6;">Your registration has been successfully received. Our core volunteer team will reach out to you within 48 hours to onboard you. Welcome to the family! 🙏</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section id="newsletter" style="padding: 80px 0; background: var(--navy); color: white; border-bottom: 1px solid rgba(255,255,255,0.08);" aria-labelledby="newsletter-title">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 40px;">
+        <div>
+          <h2 id="newsletter-title" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 10px; color: white;">Stay Updated with Jainatva</h2>
+          <p style="color: rgba(255,255,255,0.6); font-size: 14px;">Get event updates, monthly reports, and stories of impact delivered straight to your inbox.</p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="email" placeholder="Your Email Address" aria-label="Email for Newsletter" style="flex: 1; min-width: 250px; padding: 14px 20px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: white; font-family: inherit; font-size: 14px; outline: none; transition: var(--transition);" />
+          <button class="btn btn-primary" onclick="handleNewsletter(this)" style="font-size: 14.5px; padding: 14px 28px; border: none; cursor: pointer;">
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.jpeg" alt="Jainatva Bilaspur Logo" />
+            <div class="footer-logo-text">
+              <div class="org-name">JAINATVA</div>
+              <div class="org-tagline">BILASPUR</div>
+            </div>
+          </div>
+          <p>A youth-led social welfare organization dedicated to serving the community of Bilaspur through compassion, education, and service.</p>
+          <div class="footer-tagline">"Together We Serve. Together We Inspire."</div>
+          <div class="social-icons" style="margin-top: 15px;">
+            <a href="https://instagram.com/jainatva_bilaspur" class="social-icon ig" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917647031088" class="social-icon wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jainatva.bilaspur@gmail.com" class="social-icon em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="work.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Our Work</a></li>
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Join Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="join.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Become a Volunteer</a></li>
+            <li><a href="contact.html#donate"><i class="fas fa-chevron-right" aria-hidden="true"></i> Donate</a></li>
+            <li><a href="work.html#reports-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> Monthly Reports</a></li>
+            <li><a href="work.html#blog-section"><i class="fas fa-chevron-right" aria-hidden="true"></i> News &amp; Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span><a href="https://wa.me/917647031088">+91 76470 31088</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span><a href="mailto:jainatva.bilaspur@gmail.com">jainatva.bilaspur@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span><a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener">@jainatva_bilaspur</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Bilaspur, Chhattisgarh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 <strong style="color: rgba(255,255,255,0.6);">Jainatva Bilaspur</strong>. All Rights Reserved. Built with <i class="fas fa-heart" style="color: #FF5252;"></i> for Community.</p>
+        <div class="footer-bottom-social">
+          <a href="https://instagram.com/jainatva_bilaspur" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917647031088" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:jainatva.bilaspur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#navbar" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
