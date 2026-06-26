@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Meet our volunteer network and sign up to volunteer with Jainatva Bilaspur. Contribute to community drives and build leadership skills." />
-  <meta name="keywords" content="Jainatva volunteer, NGO volunteers, volunteer registration, student volunteer, Bilaspur charity" />
+  <meta name="description" content="Meet the passionate core volunteers of Jainatva Bilaspur who drive community service, social drives, and welfare initiatives across Bilaspur, Chhattisgarh." />
+  <meta name="keywords" content="Jainatva volunteers, NGO team, core volunteers, Bilaspur social workers, Anmol Jain, Mayank Jain, Sambhav Jain, Vanshika Jain" />
   <title>Our Volunteers – Jainatva Bilaspur</title>
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,13 +12,353 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── VOLUNTEERS PAGE EXCLUSIVE STYLES ── */
+
+    /* Hero */
+    .vol-hero {
+      min-height: 480px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #0a2252 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .vol-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(230,161,0,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .vol-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(26,63,122,0.4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .vol-hero-inner { position: relative; z-index: 1; }
+    .vol-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(230,161,0,0.15);
+      border: 1px solid rgba(230,161,0,0.35);
+      color: var(--saffron);
+      padding: 6px 18px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .vol-hero-badge i { font-size: 11px; }
+    .vol-hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .vol-hero h1 span { color: var(--saffron); }
+    .vol-hero p {
+      color: rgba(255,255,255,0.68);
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .vol-hero-stats {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 48px;
+    }
+    .vol-stat {
+      text-align: center;
+    }
+    .vol-stat-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--saffron);
+      line-height: 1;
+    }
+    .vol-stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* Section Divider */
+    .section-divider {
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--saffron), transparent);
+      width: 80px;
+      margin: 14px auto 0;
+      border-radius: 4px;
+    }
+
+    /* Core Volunteers */
+    .core-vol-section {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .core-vol-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 60px;
+    }
+    @media (max-width: 1100px) {
+      .core-vol-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .core-vol-grid { grid-template-columns: 1fr; }
+    }
+
+    .vol-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: 20px;
+      padding: 36px 24px 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1), box-shadow 0.35s cubic-bezier(0.4,0,0.2,1), border-color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .vol-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--saffron), var(--navy-mid));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .vol-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.13);
+      border-color: var(--saffron);
+    }
+    .vol-card:hover::before { opacity: 1; }
+
+    .vol-photo-wrap {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+    .vol-photo-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--navy-mid));
+      z-index: -1;
+    }
+    .vol-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid var(--white);
+      display: block;
+    }
+    .vol-initials {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      border: 3px solid var(--white);
+    }
+
+    .vol-badge-role {
+      display: inline-block;
+      background: var(--saffron-light);
+      color: var(--saffron-dark);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(230,161,0,0.25);
+    }
+
+    .vol-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .vol-card .vol-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .vol-contributions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .contrib-tag {
+      background: var(--navy-light);
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.3px;
+    }
+    [data-theme="dark"] .contrib-tag {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.7);
+    }
+
+    .vol-social {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 4px;
+    }
+    .vol-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s;
+      border: 1.5px solid var(--gray-200);
+      color: var(--text-secondary);
+    }
+    .vol-social a.ig:hover { background: #e1306c; color: white; border-color: #e1306c; transform: scale(1.15); }
+    .vol-social a.li:hover { background: #0077b5; color: white; border-color: #0077b5; transform: scale(1.15); }
+
+    /* Join CTA inside volunteers section */
+    .vol-cta-section {
+      padding: 80px 0;
+      background: var(--off-white);
+      border-top: 1px solid var(--gray-100);
+    }
+    .vol-cta-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: 24px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .vol-cta-box::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, rgba(230,161,0,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .vol-cta-box h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 14px;
+    }
+    .vol-cta-box p {
+      color: rgba(255,255,255,0.65);
+      font-size: 16px;
+      max-width: 520px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+    .vol-cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: var(--radius-sm);
+      font-family: 'Poppins', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      border: 2px solid rgba(255,255,255,0.4);
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s;
+      background: transparent;
+    }
+    .btn-outline-white:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: white;
+    }
+
+    /* Registration Form Section */
+    .vol-form-section {
+      padding: 100px 0;
+      background: var(--white);
+    }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Staggered delays */
+    .vol-card:nth-child(1) { transition-delay: 0s; }
+    .vol-card:nth-child(2) { transition-delay: 0.1s; }
+    .vol-card:nth-child(3) { transition-delay: 0.2s; }
+    .vol-card:nth-child(4) { transition-delay: 0.3s; }
+
+    [data-theme="dark"] .vol-card {
+      background: var(--gray-50);
+      border-color: var(--gray-100);
+    }
+    [data-theme="dark"] .vol-badge-role {
+      background: rgba(230,161,0,0.12);
+      color: var(--saffron);
+    }
+  </style>
   <script>
-    // Anti-flash theme loader
     (function() {
       const isDark = localStorage.getItem('jainatva-dark') === 'true';
-      if (isDark) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
+      if (isDark) document.documentElement.setAttribute('data-theme', 'dark');
     })();
   </script>
 </head>
@@ -67,210 +407,75 @@
     <a href="contact.html#donate" style="color: var(--saffron); font-weight: bold;"><i class="fas fa-heart"></i> Donate</a>
   </nav>
 
-  <!-- INNER BANNER -->
-  <section class="inner-banner" style="background: linear-gradient(135deg, var(--navy), var(--navy-mid)); padding: 100px 0 60px 0; text-align: center; color: white; position: relative;">
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 10% 10%, rgba(255,153,51,0.15) 0%, transparent 60%); pointer-events: none;"></div>
-    <div class="container">
-      <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1.5px;">Our Community</span>
-      <h1 style="font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 800; margin-top: 10px; color: white;">Our Volunteers</h1>
-      <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 15px auto 0 auto; font-size: 16px;">The heartbeat of Jainatva Bilaspur. Students and professionals driving social change with compassion.</p>
+  <!-- HERO SECTION -->
+  <section class="vol-hero" aria-labelledby="vol-hero-title">
+    <div class="vol-hero-inner">
+      <div class="vol-hero-badge">
+        <i class="fas fa-users"></i>
+        OUR TEAM
+      </div>
+      <h1 id="vol-hero-title">Meet Our <span>Volunteers</span></h1>
+      <p>Behind every successful initiative is a passionate team of volunteers committed to serving society with compassion, dedication, and integrity. Together, we work to create meaningful change across our community.</p>
+
     </div>
   </section>
 
-  <!-- VOLUNTEER STORIES / TESTIMONIALS SECTION -->
-  <section id="volunteers-testimonials" style="padding: 100px 0; background: var(--white);" aria-labelledby="testimonials-title">
+  <!-- CORE VOLUNTEERS SECTION -->
+  <section class="core-vol-section" id="core-volunteers" aria-labelledby="core-vol-title">
     <div class="container">
-      <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
-        <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Voices of Our Team</span>
-        <h2 id="testimonials-title" style="font-size: 32px; font-weight: 800; color: var(--text-primary);">Volunteer Testimonials</h2>
-        <p style="color: var(--text-secondary);">Real experiences shared by active members of our youth welfare network.</p>
+      <div class="text-center reveal">
+        <span style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 700; letter-spacing: 2px; display: inline-block; margin-bottom: 12px;">Our Foundation</span>
+        <h2 id="core-vol-title" style="font-size: clamp(28px,4vw,40px); font-weight: 800; color: var(--text-primary); margin-bottom: 16px;">Core Volunteers</h2>
+        <div class="section-divider"></div>
+        <p style="color: var(--text-secondary); max-width: 580px; margin: 20px auto 0; font-size: 16px; line-height: 1.7;">These dedicated individuals are the driving force behind Jainatva Bilaspur — leading every initiative with heart and purpose.</p>
       </div>
 
-      <div class="grid grid-3" style="gap: 30px;">
-        <!-- Volunteer 1 -->
-        <div class="testimonial-card reveal">
-          <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">
-            Jainatva gave me a purpose beyond my studies. Every Sunday drive reminds me why compassion matters. I have grown more as a person in one year here than in my entire life before.
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar aa-saffron">PS</div>
-            <div>
-              <div class="author-name">Priya Sharma</div>
-              <div class="author-role">B.Tech Student, Bilaspur</div>
-            </div>
+      <div class="core-vol-grid">
+
+        <!-- Volunteer 1: Anmol Jain -->
+        <div class="vol-card reveal" id="vol-anmol">
+          <div class="vol-photo-wrap">
+            <img src="assets/anmol.png" alt="Anmol Jain – Core Volunteer" class="vol-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="vol-initials" style="background: linear-gradient(135deg, #E6A100, #B58900); display: none;">AJ</div>
           </div>
+          <span class="vol-badge-role">Core Volunteer</span>
+          <h3>Anmol Jain</h3>
         </div>
 
-        <!-- Volunteer 2 -->
-        <div class="testimonial-card reveal">
-          <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">
-            As a doctor, I joined to support their medical camps. What I found was an organization that truly embodies Jain values — systematic, transparent, and driven purely by service. Proud to be associated.
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar aa-navy">DJ</div>
-            <div>
-              <div class="author-name">Dr. Divya Jain</div>
-              <div class="author-role">Volunteer Physician, Bilaspur</div>
-            </div>
+        <!-- Volunteer 2: Mayank Jain -->
+        <div class="vol-card reveal" id="vol-mayank">
+          <div class="vol-photo-wrap">
+            <img src="assets/mayank.png" alt="Mayank Jain – Core Volunteer" class="vol-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="vol-initials" style="background: linear-gradient(135deg, #0D2B5E, #1A3F7A); display: none;">MJ</div>
           </div>
+          <span class="vol-badge-role">Core Volunteer</span>
+          <h3>Mayank Jain</h3>
         </div>
 
-        <!-- Volunteer 3 -->
-        <div class="testimonial-card reveal">
-          <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">
-            Balancing corporate work and social service was hard until I joined Jainatva. Their weekend drives are planned so systematically. It is incredibly rewarding to give back to my city.
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar aa-green">AP</div>
-            <div>
-              <div class="author-name">Amit Patel</div>
-              <div class="author-role">Working Professional, Bilaspur</div>
-            </div>
+        <!-- Volunteer 3: Sambhav Jain -->
+        <div class="vol-card reveal" id="vol-sambhav">
+          <div class="vol-photo-wrap">
+            <img src="assets/sambhav.png" alt="Sambhav Jain – Core Volunteer" class="vol-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="vol-initials" style="background: linear-gradient(135deg, #0284C7, #0B4CA0); display: none;">SJ</div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS & REGISTRATION FORM -->
-  <section id="volunteer-form-section" style="padding: 100px 0; background: var(--off-white);" aria-labelledby="join-header">
-    <div class="container">
-      <div class="grid grid-2" style="gap: 50px; align-items: flex-start;">
-        <!-- Left Column: Benefits & Intro -->
-        <div class="reveal">
-          <span class="section-badge" style="color: var(--saffron); text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Volunteer Perks</span>
-          <h2 id="join-header" style="font-size: 32px; font-weight: 800; color: var(--text-primary); margin-bottom: 20px;">Why Volunteer with Jainatva?</h2>
-          <p style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.7;">
-            Whether you have an hour a week or a weekend a month, there is a place for you here. Our volunteers are at the core of every Langar distributed, every sapling planted, and every animal rescued in Bilaspur.
-          </p>
-
-          <!-- Benefit List Items -->
-          <div class="grid grid-1" style="gap: 20px;">
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
-              <div>
-                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Hands-on Social Service</h4>
-                <p style="font-size: 13.5px; color: var(--text-secondary);">Directly participate in meaningful food distribution, environmental plantation, and blood donation drives.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
-              <div>
-                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Develop Leadership Skills</h4>
-                <p style="font-size: 13.5px; color: var(--text-secondary);">Plan and coordinate social awareness projects, build public speaking and team management capabilities.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
-              <div>
-                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Youth Networking</h4>
-                <p style="font-size: 13.5px; color: var(--text-secondary);">Belong to the largest network of socially active youth in Bilaspur, forming friendships rooted in shared goodwill.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <i class="fas fa-check-circle" style="color: var(--green); font-size: 20px; margin-top: 2px;"></i>
-              <div>
-                <h4 style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Volunteer Certificate</h4>
-                <p style="font-size: 13.5px; color: var(--text-secondary);">Receive formal participation certificates for drives, validating your contributions for academic and career advancement.</p>
-              </div>
-            </div>
-          </div>
+          <span class="vol-badge-role">Core Volunteer</span>
+          <h3>Sambhav Jain</h3>
         </div>
 
-        <!-- Right Column: Registration Form Card -->
-        <div class="reveal">
-          <div class="form-card" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-sm);">
-            <h3 class="form-title" style="font-size: 22px; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; text-align: center;">Volunteer Registration</h3>
-            
-            <form id="volunteer-form" onsubmit="handleFormSubmit(event)">
-              <div class="form-group" style="margin-bottom: 20px;">
-                <label for="full-name" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Full Name *</label>
-                <input type="text" id="full-name" required placeholder="e.g. Priya Jain" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-              </div>
-
-              <div class="form-row" style="margin-bottom: 20px;">
-                <div class="form-group">
-                  <label for="phone" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Phone Number *</label>
-                  <input type="tel" id="phone" required placeholder="e.g. +91 76470 31088" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-                </div>
-                <div class="form-group">
-                  <label for="email" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Email Address</label>
-                  <input type="email" id="email" placeholder="e.g. email@example.com" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-                </div>
-              </div>
-
-              <div class="form-row" style="margin-bottom: 20px;">
-                <div class="form-group">
-                  <label for="occupation" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Occupation *</label>
-                  <select id="occupation" required style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition); cursor: pointer;">
-                    <option value="" disabled selected>Select occupation</option>
-                    <option value="student">Student</option>
-                    <option value="professional">Working Professional</option>
-                    <option value="business">Business Owner</option>
-                    <option value="homemaker">Homemaker</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="age" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Age *</label>
-                  <input type="number" id="age" required min="12" max="80" placeholder="e.g. 21" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-                </div>
-              </div>
-
-              <div class="form-row" style="margin-bottom: 20px;">
-                <div class="form-group">
-                  <label for="city" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">City / Area *</label>
-                  <input type="text" id="city" required placeholder="e.g. Vyapar Vihar, Bilaspur" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-                </div>
-                <div class="form-group">
-                  <label for="skills" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Skills / Interests</label>
-                  <input type="text" id="skills" placeholder="e.g. Design, Photography, Teaching" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition);" />
-                </div>
-              </div>
-
-              <div class="form-group" style="margin-bottom: 28px;">
-                <label for="why-join" style="display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Why do you want to join Jainatva? *</label>
-                <textarea id="why-join" required placeholder="Tell us how you would like to contribute..." style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); font-family: inherit; font-size: 14px; outline: none; background: var(--white); color: var(--text-primary); transition: var(--transition); resize: vertical; min-height: 100px;"></textarea>
-              </div>
-
-              <button type="submit" class="form-submit btn btn-primary" style="width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px;">Become a Volunteer</button>
-            </form>
-
-            <!-- Success message -->
-            <div id="form-success" class="form-success" style="display: none; text-align: center; padding: 20px 0;">
-              <i class="fas fa-check-circle" style="font-size: 48px; color: var(--green); margin-bottom: 16px;"></i>
-              <h3 style="font-size: 22px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">Welcome to Jainatva!</h3>
-              <p style="font-size: 14.5px; color: var(--text-secondary); line-height: 1.6;">Your registration has been successfully received. Our core volunteer team will reach out to you within 48 hours to onboard you. Welcome to the family! 🙏</p>
-            </div>
+        <!-- Volunteer 4: Vanshika Jain -->
+        <div class="vol-card reveal" id="vol-vanshika">
+          <div class="vol-photo-wrap">
+            <img src="assets/vanshika.png" alt="Vanshika Jain – Core Volunteer" class="vol-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="vol-initials" style="background: linear-gradient(135deg, #D4418E, #9b2c6b); display: none;">VJ</div>
           </div>
+          <span class="vol-badge-role">Core Volunteer</span>
+          <h3>Vanshika Jain</h3>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION -->
-  <section id="newsletter" style="padding: 80px 0; background: var(--navy); color: white; border-bottom: 1px solid rgba(255,255,255,0.08);" aria-labelledby="newsletter-title">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 40px;">
-        <div>
-          <h2 id="newsletter-title" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 10px; color: white;">Stay Updated with Jainatva</h2>
-          <p style="color: rgba(255,255,255,0.6); font-size: 14px;">Get event updates, monthly reports, and stories of impact delivered straight to your inbox.</p>
-        </div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <input type="email" placeholder="Your Email Address" aria-label="Email for Newsletter" style="flex: 1; min-width: 250px; padding: 14px 20px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: white; font-family: inherit; font-size: 14px; outline: none; transition: var(--transition);" />
-          <button class="btn btn-primary" onclick="handleNewsletter(this)" style="font-size: 14.5px; padding: 14px 28px; border: none; cursor: pointer;">
-            <i class="fas fa-paper-plane"></i> Subscribe
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -351,5 +556,18 @@
 
   <!-- SCRIPTS -->
   <script src="js/main.js"></script>
+  <script>
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.classList.add('visible');
+          observer.unobserve(el.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
