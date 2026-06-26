@@ -145,10 +145,59 @@
         <p class="section-desc" style="color: rgba(255,255,255,0.7); line-height: 1.6;">Every contribution — big or small — directly powers our programs and reaches the most vulnerable in our community.</p>
       </div>
 
-      <div class="donate-grid" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; max-width: 1000px; margin: 0 auto;">
+      <style>
+        .donate-grid {
+          display: grid;
+          grid-template-columns: 1.2fr 1fr;
+          gap: 50px;
+          align-items: center;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .donate-qr-wrap {
+          background: var(--white);
+          border-radius: var(--radius-md);
+          padding: 32px 28px;
+          text-align: center;
+          color: var(--text-primary);
+          border: 1px solid var(--gray-100);
+          box-shadow: var(--shadow-md);
+        }
+        .qr-img {
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+          border-radius: 12px;
+          border: 3px solid var(--gray-100);
+          margin: 0 auto 20px auto;
+          display: block;
+        }
+        @media (max-width: 768px) {
+          .donate-grid {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+          .qr-img {
+            width: 160px !important;
+            height: 160px !important;
+          }
+          .donate-qr-wrap {
+            padding: 24px 18px !important;
+          }
+          .donate-text p { font-size: 14px !important; }
+          .donate-text .btn { font-size: 13px !important; }
+        }
+        @media (max-width: 480px) {
+          .qr-img { width: 140px !important; height: 140px !important; }
+          .donate-qr-wrap h3 { font-size: 16px !important; }
+          .donate-qr-wrap p { font-size: 12px !important; }
+        }
+      </style>
+
+      <div class="donate-grid">
         <div class="donate-text">
           <p style="font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 30px;">
-            Your donation fuels weekly food langars, educational stationery kits, life-saving blood donation drives, street veterinary camps, and water pot placements in Bilaspur. We operate with complete transparency and publish monthly audits and reports detailing exactly how every single rupee is utilized.
+            Your donation fuels weekly food langars, educational stationery kits, life-saving blood donation drives, street veterinary camps, and water pot placements in Bilaspur. We operate with complete transparency and publish monthly reports detailing how every rupee is utilized.
           </p>
           <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
             <a href="https://wa.me/917647031088" class="btn btn-primary" target="_blank" rel="noopener">
@@ -163,15 +212,12 @@
           </p>
         </div>
 
-        <div class="donate-qr-wrap" style="background: var(--white); border-radius: var(--radius-md); padding: 40px 30px; text-align: center; color: var(--text-primary); border: 1px solid var(--gray-100); box-shadow: var(--shadow-md);">
-          <div class="qr-placeholder" style="width: 180px; height: 180px; background: var(--gray-50); border: 2px dashed var(--gray-300); border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; margin: 0 auto 24px auto;">
-            <i class="fas fa-qrcode" aria-hidden="true" style="font-size: 40px; color: var(--navy);"></i>
-            <span style="font-size: 13px; color: var(--text-muted); font-weight: 600;">Scan to Donate</span>
-          </div>
+        <div class="donate-qr-wrap">
+          <img src="assets/qr_donate.png" alt="UPI QR Code - Donate to Jainatva Bilaspur" class="qr-img" />
           <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Donate via UPI / QR</h3>
-          <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 15px;">Scan the QR code with any UPI app (GPay, PhonePe, Paytm) to make an instant, secure donation directly to Jainatva Bilaspur.</p>
-          <p style="font-size: 12.5px; color: var(--text-muted);">
-            Contact us at <strong>+91 76470 31088</strong> for bank transfer details (IFS Code, Account Number).
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">Scan with GPay, PhonePe or Paytm to donate instantly and securely to Jainatva Bilaspur.</p>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            For bank transfer: <strong>+91 76470 31088</strong>
           </p>
         </div>
       </div>
